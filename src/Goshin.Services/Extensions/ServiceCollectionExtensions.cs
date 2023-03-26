@@ -11,5 +11,6 @@ public static class ServiceCollectionExtensions
         services.AddTransient<IArticleService, ArticleServiceMock>();
         services.AddTransient<IEventService, EventServiceMock>();
         services.AddTransient<IProductService, ProductServiceMock>();
+        services.AddTransient<IScheduleService, ScheduleServiceMock>();
     }
 }
