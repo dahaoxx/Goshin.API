@@ -9,7 +9,7 @@ public class SchedulesController : AuthControllerBase
     [HttpGet("{id:guid}")]
     public ScheduleResponse Get(Guid id)
     {
-        return new ScheduleResponse()
+        return new ScheduleResponse
         {
             Id = id,
             Title = "Hello World",

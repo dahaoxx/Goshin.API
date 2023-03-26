@@ -1,6 +1,6 @@
-﻿namespace Goshin.API.Models.Response;
+﻿namespace Goshin.Domain.Models;
 
-public class ArticleResponse // TODO: Replace with real model
+public class Event // TODO: Replace with real model
 {
     public Guid Id { get; set; }
     public string Title { get; set; } = string.Empty;

@@ -12,7 +12,9 @@
     </ItemGroup>
     
     <ItemGroup>
-      <Folder Include="Models\Request\" />
+      <ProjectReference Include="..\Goshin.API.Models\Goshin.API.Models.csproj" />
+      <ProjectReference Include="..\Goshin.Mappers\Goshin.Mappers.csproj" />
+      <ProjectReference Include="..\Goshin.Services\Goshin.Services.csproj" />
     </ItemGroup>
 
 </Project>
