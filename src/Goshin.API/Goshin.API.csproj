@@ -10,5 +10,9 @@
         <DependentUpon>appsettings.json</DependentUpon>
       </Content>
     </ItemGroup>
+    
+    <ItemGroup>
+      <Folder Include="Models\Request\" />
+    </ItemGroup>
 
 </Project>
