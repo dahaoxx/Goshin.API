@@ -13,8 +13,8 @@ public class EventServiceMock : IEventService
             Content = "Mock event content"
         });
 
-    public Task<List<Event>> GetAllAsync() 
-        => Task.FromResult(new List<Event>
+    public async Task<IEnumerable<Event>> GetAllAsync() 
+        => await Task.FromResult(new List<Event>
         {
             new() { Id = Guid.NewGuid(), Title = "Mock Event Title 1", Content = "Mock event content 1" },
             new() { Id = Guid.NewGuid(), Title = "Mock Event Title 2", Content = "Mock event content 2" },

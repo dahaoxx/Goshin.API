@@ -5,5 +5,5 @@ namespace Goshin.Services.Contracts;
 
 public interface IScheduleService
 {
-    Task<Schedule> GetByClassAsync(ScheduleClass scheduleClass);
+    Task<Schedule> GetByClassAsync(Level level);
 }

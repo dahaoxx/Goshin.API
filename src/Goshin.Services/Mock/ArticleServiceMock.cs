@@ -13,8 +13,8 @@ public class ArticleServiceMock : IArticleService
             Content = "Mock article content"
         });
 
-    public Task<List<Article>> GetAllAsync() 
-        => Task.FromResult(new List<Article>
+    public async Task<IEnumerable<Article>> GetAllAsync() 
+        => await Task.FromResult(new List<Article>
         {
             new() { Id = Guid.NewGuid(), Title = "Mock Article Title 1", Content = "Mock article content 1" },
             new() { Id = Guid.NewGuid(), Title = "Mock Article Title 2", Content = "Mock article content 2" },

@@ -5,5 +5,5 @@ namespace Goshin.Services.Contracts;
 public interface IArticleService
 {
     Task<Article> GetByIdAsync(Guid id);
-    Task<List<Article>> GetAllAsync();
+    Task<IEnumerable<Article>> GetAllAsync();
 }

@@ -6,12 +6,10 @@ namespace Goshin.Mappers;
 public static class EventMapper
 {
     public static EventResponse ToResponse(this Event @event)
-    {
-        return new EventResponse
+        => new()
         {
             Id = @event.Id,
             Title = @event.Title,
             Content = @event.Content
         };
-    }
 }

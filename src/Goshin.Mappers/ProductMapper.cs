@@ -6,8 +6,7 @@ namespace Goshin.Mappers;
 public static class ProductMapper
 {
     public static ProductResponse ToResponse(this Product product)
-    {
-        return new ProductResponse
+        => new()
         {
             Id = product.Id,
             Name = product.Name,
@@ -16,5 +15,4 @@ public static class ProductMapper
             ImageUrl = product.ImageUrl,
             Sizes = product.Sizes
         };
-    }
 }

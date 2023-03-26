@@ -16,10 +16,10 @@ public class SchedulesController : AuthControllerBase
         _scheduleService = scheduleService;
     }
 
-    [HttpGet("{class}")]
-    public async Task<ActionResult<ScheduleResponse>> Get(ScheduleClass @class)
+    [HttpGet("{level}")]
+    public async Task<ActionResult<ScheduleResponse>> Get(Level level)
     {
-        var schedule = await _scheduleService.GetByClassAsync(@class);
+        var schedule = await _scheduleService.GetByClassAsync(level);
         return schedule.ToResponse();
     }
 }

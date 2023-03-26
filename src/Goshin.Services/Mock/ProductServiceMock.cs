@@ -16,8 +16,8 @@ public class ProductServiceMock : IProductService
             Sizes = new List<string> { "S", "M", "L" }
         });
 
-    public Task<List<Product>> GetAllAsync() 
-        => Task.FromResult(new List<Product>
+    public async Task<IEnumerable<Product>> GetAllAsync() 
+        => await Task.FromResult(new List<Product>
         {
             new() { Id = Guid.NewGuid(), Name = "Mock Product Name 1", Description = "Mock product description 1", Price = 100, ImageUrl = "https://via.placeholder.com/150", Sizes = new List<string> { "S", "M", "L" } },
             new() { Id = Guid.NewGuid(), Name = "Mock Product Name 2", Description = "Mock product description 2", Price = 200, ImageUrl = "https://via.placeholder.com/150", Sizes = new List<string> { "S", "M", "L" } },
