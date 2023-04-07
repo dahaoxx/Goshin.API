@@ -2,8 +2,9 @@
 
 public enum Level
 {
-    Champs,
-    Junior,
-    Basics,
-    Mastery,
+    None = 0,
+    Champs = 1,
+    Junior = 2,
+    Basics = 3,
+    Mastery = 4,
 }

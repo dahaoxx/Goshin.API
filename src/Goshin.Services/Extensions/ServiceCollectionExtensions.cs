@@ -8,5 +8,6 @@ public static class ServiceCollectionExtensions
     public static void AddGoshinServices(this IServiceCollection services)
     {
         services.AddTransient<IEventService, EventServiceMock>();
+        services.AddTransient<IUserService, UserService>();
     }
 }

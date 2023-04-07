@@ -5,6 +5,8 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Goshin.API.Auth\Goshin.API.Auth.csproj" />
+      <ProjectReference Include="..\Goshin.Database\Goshin.Database.csproj" />
       <ProjectReference Include="..\Goshin.Domain\Goshin.Domain.csproj" />
     </ItemGroup>
 

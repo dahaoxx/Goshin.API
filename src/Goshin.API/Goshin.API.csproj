@@ -6,7 +6,12 @@
     
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
         <PackageReference Include="Swashbuckle.AspNetCore" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" />
     </ItemGroup>
     
     <ItemGroup>
@@ -16,8 +21,10 @@
     </ItemGroup>
     
     <ItemGroup>
+      <ProjectReference Include="..\Goshin.API.Auth\Goshin.API.Auth.csproj" />
       <ProjectReference Include="..\Goshin.API.Models\Goshin.API.Models.csproj" />
       <ProjectReference Include="..\Goshin.API.Mappers\Goshin.API.Mappers.csproj" />
+      <ProjectReference Include="..\Goshin.Database\Goshin.Database.csproj" />
       <ProjectReference Include="..\Goshin.Services.Sanity\Goshin.Services.Sanity.csproj" />
       <ProjectReference Include="..\Goshin.Services\Goshin.Services.csproj" />
     </ItemGroup>
