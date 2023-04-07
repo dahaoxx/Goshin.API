@@ -1,3 +1,4 @@
+using Goshin.Services.Extensions;
 using Goshin.Services.Sanity.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,7 +7,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
+builder.Services.AddGoshinServices();
+// TODO: Move to secret
 builder.Services.AddSanityServices(option =>
 {
     option.ProjectId = "5qlmrfwg";

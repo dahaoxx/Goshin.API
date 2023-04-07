@@ -1,14 +1,12 @@
 ﻿using Goshin.API.Models.Response;
+using Goshin.Domain.Enums;
 using Goshin.Domain.Models;
 
 namespace Goshin.Mappers;
 
 public static class EventMapper
 {
-    public static IEnumerable<EventResponse> ToResponse(this IEnumerable<Event> events)
-        => events.Select(ToResponse);
-    
-    public static EventResponse ToResponse(this Event @event)
+    public static EventResponse ToResponse(this Event @event, bool isSignedUp, Level userLevel)
         => new()
         {
             Id = @event.Id,
@@ -16,6 +14,8 @@ public static class EventMapper
             Content = @event.Content,
             Date = @event.Date,
             LastSignupDate = @event.LastSignupDate,
+            IsSignedUp = isSignedUp,
+            CanParticipate = @event.CanParticipate.Any(x => x == userLevel),
             IsFree = @event.Price <= 0,
             Price = @event.Price
         };

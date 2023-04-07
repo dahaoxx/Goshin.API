@@ -15,6 +15,7 @@
       <ProjectReference Include="..\Goshin.API.Models\Goshin.API.Models.csproj" />
       <ProjectReference Include="..\Goshin.Mappers\Goshin.Mappers.csproj" />
       <ProjectReference Include="..\Goshin.Services.Sanity\Goshin.Services.Sanity.csproj" />
+      <ProjectReference Include="..\Goshin.Services\Goshin.Services.csproj" />
     </ItemGroup>
 
 </Project>
