@@ -8,12 +8,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddGoshinServices();
-// TODO: Move to secret
 builder.Services.AddSanityServices(option =>
 {
-    option.ProjectId = "5qlmrfwg";
-    option.Dataset = "production";
-    option.Token = "skEOeMvbQ5grKZl2c3yuDoL2xcYNNC2CEF1ybyrlxDPjYKhCBdWhF3w7RvjUcmfs6DBazjLxbeZbfkIx0HtllIV54DOWsoQf52LgSCIQgHCR5mNrqB5GLZnp3w3jRT8J6xQNzCKuREElje1OvEyu3nxlAxrP8FubGqqn4jueEpAJBQAdhqdk";
+    option.ProjectId = builder.Configuration["Sanity:ProjectId"]!;
+    option.Dataset = builder.Configuration["Sanity:Dataset"]!;
+    option.Token = builder.Configuration["Sanity:Token"]!;
 });
 
 var app = builder.Build();
