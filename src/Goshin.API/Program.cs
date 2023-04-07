@@ -1,4 +1,5 @@
 using Goshin.API.Auth.Extensions;
+using Goshin.API.Extensions;
 using Goshin.Database.Extensions;
 using Goshin.Services.Extensions;
 using Goshin.Services.Sanity.Extensions;
@@ -16,6 +17,7 @@ builder.Services.AddSanityServices(option =>
     option.Dataset = builder.Configuration["Sanity:Dataset"]!;
     option.Token = builder.Configuration["Sanity:Token"]!;
 });
+builder.Services.AddGoshinSwagger();
 builder.Services.AddGoshinDatabase(builder.Configuration);
 builder.Services.AddGoshinAuth(options =>
 {

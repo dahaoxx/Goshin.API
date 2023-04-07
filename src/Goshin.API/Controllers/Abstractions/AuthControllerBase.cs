@@ -1,5 +1,7 @@
-﻿namespace Goshin.API.Controllers.Abstractions;
+﻿using Microsoft.AspNetCore.Authorization;
 
-//[Authorize] TODO: Add this back in when we have authentication
+namespace Goshin.API.Controllers.Abstractions;
+
+[Authorize]
 public class AuthControllerBase : ApiControllerBase
 { }
