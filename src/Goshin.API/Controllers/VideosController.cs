@@ -1,8 +1,8 @@
-﻿using Goshin.API.Controllers.Abstractions;
+﻿/*using Goshin.API.Controllers.Abstractions;
 using Goshin.API.Models.Response;
 using Goshin.Domain.Enums;
 using Goshin.Mappers;
-using Goshin.Services.Contracts;
+using Goshin.Services.Sanity.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Goshin.API.Controllers;
@@ -23,4 +23,4 @@ public class VideosController : AuthControllerBase
         var videResponses = schedule.Select(v => v.ToResponse());
         return Ok(videResponses);
     }
-}
+}*/

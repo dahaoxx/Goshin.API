@@ -1,8 +1,8 @@
-﻿using Goshin.Domain.Enums;
+﻿/*using Goshin.Domain.Enums;
 using Goshin.Domain.Models;
-using Goshin.Services.Contracts;
+using Goshin.Services.Sanity.Contracts;
 
-namespace Goshin.Services.Mock;
+namespace Goshin.Services.Sanity.Mock;
 
 public class ScheduleServiceMock : IScheduleService
 {
@@ -23,4 +23,4 @@ public class ScheduleServiceMock : IScheduleService
             }
         });
     }
-}
+}*/

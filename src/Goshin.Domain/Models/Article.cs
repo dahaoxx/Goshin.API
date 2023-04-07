@@ -1,8 +1,12 @@
-﻿namespace Goshin.Domain.Models;
+﻿using Goshin.Domain.Contracts;
+using Goshin.Domain.Enums;
 
-public class Article // TODO: Replace with real model
+namespace Goshin.Domain.Models;
+
+public class Article : IVisibleTo
 {
-    public Guid Id { get; set; }
-    public string Title { get; set; } = string.Empty;
-    public string Content { get; set; } = string.Empty;
+    public Guid Id { get; init; }
+    public string Title { get; init; } = string.Empty;
+    public string Content { get; init; } = string.Empty;
+    public IEnumerable<Level> VisibleTo { get; init; } = new List<Level>();
 }

@@ -1,7 +1,7 @@
 ﻿using Goshin.API.Controllers.Abstractions;
 using Goshin.API.Models.Response;
 using Goshin.Mappers;
-using Goshin.Services.Contracts;
+using Goshin.Services.Sanity.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Goshin.API.Controllers;
@@ -26,7 +26,7 @@ public class ProductsController : AuthControllerBase
     [HttpGet("{id:guid}")]
     public async Task<ActionResult<ProductResponse>> Get(Guid id)
     {
-        var product = await _productService.GetByIdAsync(id);
+        var product = await _productService.GetByIdAsync(id.ToString());
         return Ok(product.ToResponse());
     }
 }

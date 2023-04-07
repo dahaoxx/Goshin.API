@@ -1,8 +1,8 @@
-﻿using Goshin.Domain.Enums;
+﻿/*using Goshin.Domain.Enums;
 using Goshin.Domain.Models;
-using Goshin.Services.Contracts;
+using Goshin.Services.Sanity.Contracts;
 
-namespace Goshin.Services.Mock;
+namespace Goshin.Services.Sanity.Mock;
 
 public class VideosServiceMock : IVideosService
 {
@@ -17,4 +17,4 @@ public class VideosServiceMock : IVideosService
             new() { Title = "Video 5", Url = "test.com/video/5", ThumbnailUrl = "test.com/thumbnail/5" },
         });
     }
-}
+}*/

@@ -1,8 +1,15 @@
 ﻿namespace Goshin.API.Models.Response;
 
-public class EventResponse // TODO: Replace with real model
+public class EventResponse
 {
-    public Guid Id { get; set; }
-    public string Title { get; set; } = string.Empty;
-    public string Content { get; set; } = string.Empty;
+    public required Guid Id { get; set; }
+    public required string Title { get; set; }
+    public required string Content { get; set; }
+
+    public DateTime Date { get; init; }
+    public DateTime LastSignupDate { get; init; }
+    public bool CanParticipate { get; init; }
+    public bool IsSignedUp { get; init; }
+    public bool IsFree { get; set; }
+    public int Price { get; init; }
 }
