@@ -1,10 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <ItemGroup>
-      <Folder Include="Request\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\Goshin.Domain\Goshin.Domain.csproj" />
     </ItemGroup>
 

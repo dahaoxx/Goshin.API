@@ -1,7 +1,7 @@
 ﻿using Goshin.API.Models.Response;
 using Goshin.Domain.Models;
 
-namespace Goshin.Mappers;
+namespace Goshin.API.Mappers;
 
 public static class ProductMapper
 {

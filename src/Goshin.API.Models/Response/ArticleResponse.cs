@@ -1,6 +1,4 @@
-﻿using Goshin.Domain.Enums;
-
-namespace Goshin.API.Models.Response;
+﻿namespace Goshin.API.Models.Response;
 
 public class ArticleResponse
 {

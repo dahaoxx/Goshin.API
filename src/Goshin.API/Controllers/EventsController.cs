@@ -2,7 +2,7 @@
 using Goshin.API.Models.Response;
 using Goshin.Domain.Enums;
 using Goshin.Domain.Models;
-using Goshin.Mappers;
+using Goshin.API.Mappers;
 using Goshin.Services.Contracts;
 using Goshin.Services.Sanity.Contracts;
 using Microsoft.AspNetCore.Mvc;

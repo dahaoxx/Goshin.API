@@ -2,7 +2,7 @@
 using Goshin.Domain.Enums;
 using Goshin.Domain.Models;
 
-namespace Goshin.Mappers;
+namespace Goshin.API.Mappers;
 
 public static class EventMapper
 {

@@ -1,5 +1,4 @@
 ﻿using Goshin.Domain.Models;
-using Goshin.Services.Sanity.Models;
 
 namespace Goshin.Services.Sanity.Contracts;
 
